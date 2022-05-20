@@ -4,7 +4,7 @@ const gql = require("graphql-tag");
 const mongoose = require("mongoose");
 
 //Relative imports
-const Post = require("./models/Post");
+const Post = require("./models/Post.js");
 const {MONGODB} = require("./config.js");
 
 const typeDefs = gql`
@@ -24,6 +24,7 @@ const resolvers = {
     async getPosts(){
         try {
             const posts = await Post.find();
+            return posts;
         } catch (error) {
             throw new Error(error);
         }
@@ -37,9 +38,10 @@ const server = new ApolloServer({
     resolvers
 });
 
-mongoose.connect(MONGODB, {useNewUrlParser: true})
+mongoose
+    .connect(MONGODB, {useNewUrlParser: true})
     .then(() => {
         return server.listen({port:5000});
-    }).then(res => {
+    }).then((res) => {
         console.log(`Server running at ${res.url}`)
     })
