@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/NA-Ag/dog-training/issues"
   },
-  "homepage": "https://github.com/NA-Ag/dog-training#readme"
+  "homepage": "https://github.com/NA-Ag/dog-training#readme",
+  "dependencies": {
+    "apollo-server": "^3.7.0",
+    "graphql": "^16.5.0",
+    "mongoose": "^6.3.4"
+  }
 }
