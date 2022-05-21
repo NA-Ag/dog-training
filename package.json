@@ -19,7 +19,9 @@
   "homepage": "https://github.com/NA-Ag/dog-training#readme",
   "dependencies": {
     "apollo-server": "^3.7.0",
+    "bcryptjs": "^2.4.3",
     "graphql": "^16.5.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.4"
   }
 }
