@@ -12,7 +12,7 @@ import SignUp from "./pages/SignUp";
 function App() {
   return (
     <Router>
-    <MenuBar/>
+    <MenuBar />
     <Route exact path="/" component={Home}/>
     <Route exact path="/login" component={Login}/>
     <Route exact path="/signup" component={SignUp}/>
