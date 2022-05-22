@@ -4,7 +4,10 @@
   "description": "An application focused on connecting dog training enthusiasts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "node index",
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "semantic-ui-css-patch"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,9 @@
     "bcryptjs": "^2.4.3",
     "graphql": "^16.5.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.3.4"
+    "mongoose": "^6.3.4",
+    "react-router-dom": "^6.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.2"
   }
 }
